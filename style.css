@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  header {
+    background-color: #9ff6f9;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+  }
+  main {
+    padding: 1em;
+  }
+  section {
+    margin-bottom: 2em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #008891;
+    color: white;
+    border: none;
+    padding: 0.7em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #005f63;
+  }
+  footer {
+    background-color: #9ff6f9;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .slider {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .slides {
+    display: flex;
+    width: 1500px; /* 3 images * 500px */
+    animation: slide 9s infinite;
+  }
+  
+  .slides img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0%   { transform: translateX(0); }
+    33%  { transform: translateX(-500px); }
+    66%  { transform: translateX(-1000px); }
+    100% { transform: translateX(0); }
+  }

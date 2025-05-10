@@ -1,0 +1,62 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hope for Paws - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hope for Paws Shelter</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="care.html">Dog Care</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Nearby Veterinarian</h2>
+      <p><strong>Dr. Aria Vet Clinic</strong><br />Phone: (91) 987654214<br />123 Pet Street, Animal Town</p>
+      <h2>Day Care</h2>
+      <p>We offer a safe and nurturing day care service for both dogs and cats, providing playtime, rest, and attentive care while you're away.</p>
+    </section>
+
+    <section>
+      <h2>Our Location</h2>
+      <p>456 Shelter Lane, Animal Town</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18..."
+        width="100%"
+        height="250"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"></iframe>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <form onsubmit="handleForm(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hope for Paws Shelter</p>
+  </footer>
+
+  <script>
+    function handleForm(event) {
+      event.preventDefault();
+      alert("Thanks for reaching out! We'll get back to you soon.");
+    }
+  </script>
+</body>
+</html>
